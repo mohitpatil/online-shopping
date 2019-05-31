@@ -1,24 +1,22 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row">
+        <div className="col-6">
+          <FontAwesomeIcon icon={faHome}/>
+          Hey
+        </div>
+        <div className="col-6">
+          Hello
+        </div>
+      </div>
     </div>
   );
 }
